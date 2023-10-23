@@ -29,14 +29,6 @@ export function Home() {
       </li>
       </Buttons>
 
-
-      {/* <ul className="botoes">
-        <li>
-          <Button>
-            <img src="" alt="" />
-          </Button>
-        </li>
-      </ul> */}
     </>
   );
 }
