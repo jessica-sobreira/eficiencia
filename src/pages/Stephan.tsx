@@ -14,7 +14,7 @@ export function Stephan() {
             <NameStudent>Stephàn Costa</NameStudent>
             <Description>
                 <ul>
-                    <li>Simpático</li>
+                    <li>Colaborativo</li>
                     <li>Resolutivo</li>
                     <li>Comunicativo</li>
                 </ul>
