@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import { Student, Content, Description, NameStudent, ImageStudent } from '../components/Students';
+import { Student, Content, Description, NameStudent, ImageStudent, StyledLink } from '../components/Students';
 
 
 export function Gabriel() {
     return (
         <>
-        <Link style={{ textDecoration: 'none', color: 'white', margin: '30px' }} to='/'>Home</Link>
+        <StyledLink to='/'>Home</StyledLink>
 
         <Student selected>
           <ImageStudent src="https://avatars.githubusercontent.com/u/111029467?v=4" alt="Gabriel" />

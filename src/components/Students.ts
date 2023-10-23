@@ -1,4 +1,12 @@
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin-left: 3%; 
+`;
 
 interface StudentProps {
     selected?: boolean;
@@ -6,7 +14,7 @@ interface StudentProps {
 
 export const Student = styled.div<StudentProps>`
 width: 23vw;
-height: auto;
+height: 78vh;
 margin-top: 2%;
 margin-left: 33%;
 list-style: none;
@@ -39,8 +47,6 @@ export const Description = styled.p`
     list-style: none;
   }
   
-
-
 `;
 
 
