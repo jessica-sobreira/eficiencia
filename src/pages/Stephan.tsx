@@ -1,4 +1,4 @@
-import { Student, Content, Description, NameStudent, ImageStudent, StyledLink } from '../components/Students';
+import { Student, Content, Description, NameStudent, ImageStudent, StyledLink, DivLink } from '../components/Students';
 import { Link } from 'react-router-dom';
 import { Button, Buttons } from '../components/Home';
 
@@ -6,7 +6,9 @@ import { Button, Buttons } from '../components/Home';
 export function Stephan() {
     return (
         <>
+        <DivLink>
         <StyledLink to='/'>Home</StyledLink>
+        </DivLink>
 
         <Student selected>
           <ImageStudent src="https://avatars.githubusercontent.com/u/109179158?v=4" alt="Stephan" />
@@ -14,13 +16,14 @@ export function Stephan() {
             <NameStudent>Stephàn Costa</NameStudent>
             <Description>
                 <ul>
-                    <li>Colaborativo</li>
+                    <li>Simpático</li>
                     <li>Resolutivo</li>
                     <li>Comunicativo</li>
                 </ul>
             </Description>
           </Content>
         </Student>
+
         <Buttons>
         <li>
       <Link to='/gabriel'><Button><img src="https://avatars.githubusercontent.com/u/111029467?v=4" alt="Gabriel" /></Button></Link>

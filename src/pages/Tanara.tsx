@@ -1,12 +1,14 @@
-import { Student, Content, Description, NameStudent, ImageStudent, StyledLink } from '../components/Students';
+import { Student, Content, Description, NameStudent, ImageStudent, StyledLink, DivLink } from '../components/Students';
 import { Link } from 'react-router-dom';
 import { Button, Buttons } from '../components/Home';
-
 
 export function Tanara() {
     return (
         <>
+        <DivLink>
         <StyledLink to='/'>Home</StyledLink>
+        </DivLink>
+
         <Student selected>
           <ImageStudent src="https://media.licdn.com/dms/image/C4D03AQHY69elQf-D2A/profile-displayphoto-shrink_800_800/0/1630435860458?e=1703721600&v=beta&t=87zcDroa84K_anmSZL-IY49DZZroeDyemqRVELLrimQ" alt="Tanara" />
           <Content>
@@ -20,6 +22,7 @@ export function Tanara() {
             </Description>
           </Content>
         </Student>
+
         <Buttons>
         <li>
       <Link to='/gabriel'><Button><img src="https://avatars.githubusercontent.com/u/111029467?v=4" alt="Gabriel" /></Button></Link>

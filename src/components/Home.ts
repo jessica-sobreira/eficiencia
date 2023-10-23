@@ -41,9 +41,9 @@ export const Text = styled.p`
   display: flex;
   margin-left: 4%;
   margin-top: 2%;
-  font-size: 1.5em;
+  font-size: 1.3em;
   flex-direction: column;
-  margin-right: 45%;
+  margin-right: 50%;
   text-align: center;
 `;
 
@@ -51,6 +51,8 @@ export const Button = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
 `;
 
 export const Buttons = styled.div`
@@ -66,6 +68,10 @@ export const Buttons = styled.div`
   gap: 18px;
   background-color: rgba(0, 0, 0, 0.3);
   list-style: none;
+
+  :hover{
+    transform: scale(1.05)
+  }
 
   ${Button} {
     border: none;
