@@ -14,10 +14,19 @@ export const StyledLink = styled(Link)`
   background-color: transparent;
   border-radius: 5px;
   transition: 0.3s ease-in-out; 
+
+  @media (max-width: 900px) {
+    font-size: 1.3em;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+
+
 `;
 
 export const DivLink = styled.div`
-margin-top:20px`;
+  margin-top:20px;
+`;
 
 interface StudentProps {
     selected?: boolean;
@@ -34,12 +43,28 @@ border-radius: 15px;
 text-align: center;
 box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 1);
 background-color: ${(props) => (props.selected ? 'lightgray' : 'transparent')};
+
+@media (max-width: 900px) {
+  width: 50vw;
+  max-width: 550px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2%;
+
+}
 `
 
 export const ImageStudent = styled.img`
   max-width: 100%;
   height: auto;
   border: 3px solid black;
+
+  @media (max-width: 900px) {
+    max-width: 90%;
+    height: auto;
+    border: 2px solid black;
+
+
 `;
 
 export const Content = styled.div``;
@@ -47,6 +72,12 @@ export const Content = styled.div``;
 export const NameStudent = styled.h2`
   margin-top: 2%;
   font-size: 2em;
+
+  @media (max-width: 900px) {
+    font-size: 1.5em;
+
+  }
+
 `;
 
 export const Description = styled.p`
@@ -61,7 +92,10 @@ export const Description = styled.p`
     text-align: left
 
   }
+
+  @media (max-width: 900px) {
+    font-size: 1.1em;
+
+
   
 `;
-
-
